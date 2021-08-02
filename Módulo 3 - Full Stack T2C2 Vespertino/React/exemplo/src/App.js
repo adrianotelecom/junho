@@ -109,7 +109,7 @@ export default class App extends React.Component{
     return (
       <div className="cardapio">
         <main className="nomes">
-          <h1></h1>
+          <div className="logo"></div>
           <hr />
           <h2>
             {editando

@@ -1,0 +1,88 @@
+body{
+    background-image: url(https://epicorpg.com.br/wp-content/uploads/2019/03/Cidade.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px ;
+    border-color: rgb(252, 249, 249);
+    border-style: solid;
+
+}
+.titulo{
+    
+    text-align: center; 
+    text-decoration: underline;
+    font-weight:lighter 900; 
+    color: rgb(247, 8, 8); 
+    
+}
+.personagem{
+    text-align: center;
+    border-width: 3px ;
+    border: color #3359ec;
+    border-style: solid;
+    background-color: gold;
+    text-align: center;
+    font-weight:lighter 900;
+    color: rgb(56, 3, 245);
+           
+}
+
+.container{
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.container img{
+    width: 10rem;
+    
+
+}
+.container p{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(252, 10, 10);
+}
+
+.arma{
+    align-items: center;
+    border-width: 3px;
+    border-color: #f1045f;
+    border-style: solid;
+    margin-top: 5px;
+    background-color: rgb(105, 212, 132);
+    text-align: center;
+    font:small;
+    color: rgb(19, 16, 16);
+}
+
+.botao{
+    text-align: center;
+    
+    
+
+}
+.botao button{
+    width: 200px;
+    left: 50px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    background: darkblue;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 5px 0 rgb(4, 4, 250);
+}
+.botao button:hover{
+    background: rgb(4, 4, 240);
+    color: #fff;
+    box-shadow: rgb(2, 2, 17);
+
+}
+.botao button:active{
+    background: relative;
+    top: 5px;
+    box-shadow: none;
+
+}

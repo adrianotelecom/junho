@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popeye</title>
+    <style>
+
+
+       
+        
+
+    </style>
+    <link rel="Stylesheet" href="static/style.css" />
+</head>
+<body>
+   
+    <div class="humor">
+        {% if humor %}
+
+        <div class="sorrindo" method="POST">
+            <p><b>Nome:</b> {{nome}}</p>
+            <p><b>Idade:</b>{{idade}}</p>
+            
+            <img src="{{imagem}}" width="30%" alt="Estou Feliz Hoje.">
+            <br>
+            Popeye hoje comeu espinafre! 
+            <form action="/Bravo" method="POST">
+                <button title="Estou bravo" class="efeito">Bravo</button>
+                </form>
+        </div>
+        
+        {% else %}
+        <div class="Bravo">
+            <p><b>Nome:</b> {{nome}}</p>
+            <p><b>Idade:</b>{{idade}}</p>
+            <img src="{{imagem2}}" width="500" alt="Estou Bravo.">
+            <br>
+            <p>Olivia saiu e até agora não voltou!</p>
+            <form action="/" method="POST">
+                <button title="Melhor ele calmo" class="efeito">Voltar</button>
+                </form>
+                
+        </div>
+        {% endif %}
+  
+        
+        
+        
+        
+
+
+    </div>
+</body>
+</html>

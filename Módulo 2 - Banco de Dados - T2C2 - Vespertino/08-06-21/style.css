@@ -1,0 +1,14 @@
+body{
+    background-color: deeppink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.titulo{
+    font-weight: 900;
+    color: rgb(14, 238, 115);
+
+}
+#nome{
+    font-weight: lighter;
+    color: grey;
+}

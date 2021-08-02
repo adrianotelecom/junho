@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <link rel="shortcuticon" href="../static/favicon.ico"type="imagem/x-icon">
+
+    <title>Calculadora de Dano</title>
+</head>
+<body onload ="iniciar()">
+    <h1 class="titulo">Calculadora de Dano</h1>
+    <br>
+    <div class="personagem"> Selecione um personagem</div>
+    <div class="contains">
+        
+        <div class="lugar objeto" id="orc">
+            <img src="{{img_orc}}" title="Orc" alt="Ua Orc cadê você?">
+            <p><b>{{orc}}</b></p>
+        </div >
+        <div class="lugar objeto" id="globin">
+            <img src="{{img_globin}}" title="Globin" alt="você já correu da batalha Globin" >
+            <p><b>{{globin}}</b></p>
+        </div>
+        <div class="lugar objeto" id="feiticeira">
+            <img src="{{img_feiticeira}}" title="Feiticeira" alt="feiticeira? Estou quase  chegando" >
+            <p><b>{{feiticeira}}</b></p>
+        </div>
+    </div>
+
+
+    <h2 class="arma" title="Cuidado isso faz dodoi!">Selecione uma arma &#128299;</h2>
+
+    <div class="contains">
+        <div class="lugar faca" id="soco">
+            <img src="{{img_soco}}" title="Soco" alt="Os dedos não fecha!" >
+            <p><b>{{Soco}}</b></p>
+        </div>
+        <div class="lugar faca" id="arco">
+            <img src="{{img_arco}}" title="Arco" alt="Estamos trocando o elastico." >
+            <p><b>{{Arco}}</b></p>
+        </div>
+        <div class="lugar faca" id="espada">
+            <img src="{{img_espada}}" title="Espada" alt="Calma ainda não esta afiada.">
+            <p><b>{{Espada}}</b></p>
+        </div>
+    </div>
+    <div class="botao ">
+        <button id="calcular" type="button">calcular Estrago</button>
+    </div>
+
+    <div class="botao">
+        <span id="estrago"></span>
+    </div>
+    <script type="text/javascript" src="../static/index.js"></script>
+</body>
+</html>
+
+
+
+<img src="../static/personagens/" alt="">

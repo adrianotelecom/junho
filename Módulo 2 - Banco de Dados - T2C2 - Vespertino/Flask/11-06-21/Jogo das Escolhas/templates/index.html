@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das escolhas</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="form_wrapper">
+        {%if not escolha%}
+
+        <form method="POST">
+            <div class="form_bloco">
+                <img src="static/logo-blue.gif" width="100" alt="Logo da Blue" />
+            </div>
+            <div class="form_bloco">
+                <label for="nome" class="form_label">
+                    Digite o seu nome:
+                </label>
+                <input type="text" name="nome" id="nome" placeholder="João" required />
+            </div>
+
+            <div class="form_bloco">
+                <label for="sobrenome" class="form_label">
+                    Digite o seu sobrenome:
+                </label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Silva" required />
+            </div>
+
+            <div class="form_bloco">
+                <input type="radio" name="escolha" id="escolha1" value="elfo" checked />
+                <label for="escolha1">Elfo</label>
+
+                <input type="radio" name="escolha" id="escolha2" value="orc" />
+                <label for="escolha2">Orc</label>
+
+
+                <input type="radio" name="escolha" id="escolha3" value="hobbit" />
+                <label for="escolha3">Hobbit</label>
+            </div>
+            <div class="form_bloco">
+                <input type="submit" class="form_enviar" value="Jogar" />
+
+            </div>
+
+        </form>
+        {%else%}
+
+        <div class="jogo_escolha">
+            {{nome}},{{sobrenome}}, você é um <b>{{escolha}}</b>
+        </div>
+
+        <div class="jogo_escolha_imagem">
+            <img src="{{escolha_imagem}}" alt="Imagem de {{escolha}}" width="100%" />
+        </div>
+
+        <div class="jogo_bloco">
+            <a href="/" class="jogo_botao">Jogar Novamente</a>
+
+        </div>
+
+        {%endif%}
+
+
+
+
+    </div>
+</body>
+</html>

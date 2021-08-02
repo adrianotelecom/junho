@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcuticon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora de Dano</title>
+    <script src="index.js"></script>
+
+
+</head>
+
+<body onload="iniciar()">
+    <h1 class="titulo">Calculadora de Dano</h1>
+    <br>
+    
+    <h1 class="personagem"> ***Selecione um personagem**** </h1>
+    
+    <div class="contains">
+        
+        <div class="lugar objeto" id="orc">
+            <img src="orc.png" title="Orc" alt="Ua Orc cadê você?">
+            <p><b>Orc</b></p>
+        </div >
+        <div class="lugar objeto" id="globin">
+            <img src="globin.png" title="Globin" alt="você já correu da batalha Globin" id="globin">
+            <p><b>Globin</b></p>
+        </div>
+        <div class="lugar objeto" id="feiticeira">
+            <img src="feiticeira.png" title="Feiticeira" alt="feiticeira? Estou quase  chegando" id="feiticeira">
+            <p><b>Feiticeira</b></p>
+        </div>
+    </div>
+
+
+    <h2 class="arma" title="Cuidado isso faz dodoi!">Selecione uma arma &#128299;</h2>
+
+    <div class="contains">
+        <div class="lugar faca" id="soco">
+            <img src="soco.png" title="Soco" alt="Os dedos não fecha!" id="soco">
+            <p><b>Soco</b></p>
+        </div>
+        <div class="lugar faca" id="arco">
+            <img src="arco.png" title="Arco" alt="Estamos trocando o elastico." id="arco">
+            <p><b>Arco</b></p>
+        </div>
+        <div class="lugar faca" id="espada">
+            <img src="espada.png" title="Espada" alt="Calma ainda não esta afiada." id="espada">
+            <p><b>Espada</b></p>
+        </div>
+    </div>
+    <div class="botao ">
+        <button id="calcular" type="button">calcular Estrago</button>
+    </div>
+
+    <div class="botao">
+        <span id="estrago"></span>
+    </div>
+    </div>
+</body>
+
+</html>

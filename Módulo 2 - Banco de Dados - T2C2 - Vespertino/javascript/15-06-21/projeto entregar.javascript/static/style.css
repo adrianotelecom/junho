@@ -1,0 +1,28 @@
+body{
+    background-image:  url("https://upload.wikimedia.org/wikipedia/commons/6/62/Popeye_Village_overview.JPG;") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.humor{
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    -ms-flex-align: inherit;
+    justify-content: center;
+}
+button{
+    cursor: pointer;
+    font-size: 30px;
+    color:red;
+    background-color: black;
+    border: 2px solid blue;
+    border-radius: 3pc;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    
+ 
+}
+
+

@@ -4,7 +4,7 @@ body{
   background: rgb(116, 112, 78);
   
 }
-h1 {
+.logo {
   width: 850px;
   padding: 80px;
   margin-top: 1cm;
